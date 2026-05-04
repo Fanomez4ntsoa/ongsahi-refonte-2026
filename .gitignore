@@ -1,0 +1,108 @@
+# === WordPress Core (géré par WP) ===
+/wp-admin/
+/wp-includes/
+/wp-*.php
+!/wp-config-sample.php
+/index.php
+/license.txt
+/readme.html
+/xmlrpc.php
+
+# === wp-content : on exclut tout par défaut ===
+/wp-content/*
+
+# === ... mais on RÉ-INCLUT ce qui est à nous ===
+!/wp-content/themes/
+!/wp-content/plugins/
+!/wp-content/mu-plugins/
+!/wp-content/uploads/
+
+# === Dans themes/ : on exclut tous les thèmes... ===
+/wp-content/themes/*
+# === ... sauf notre thème child ===
+!/wp-content/themes/modins-child/
+
+# === Dans plugins/ : on exclut tous les plugins tiers... ===
+/wp-content/plugins/*
+# === ... sauf notre plugin custom ===
+!/wp-content/plugins/sahi-platforms/
+
+# === Uploads : on exclut les médias lourds mais on garde la structure ===
+/wp-content/uploads/
+
+# === Cache & logs ===
+/wp-content/cache/
+/wp-content/upgrade/
+/wp-content/backup-db/
+/wp-content/backups/
+/wp-content/blogs.dir/
+/wp-content/wflogs/
+/wp-content/debug.log
+*.log
+
+# === Configs sensibles ===
+wp-config.php
+.htaccess
+.user.ini
+
+# === Duplicator (les sauvegardes générées) ===
+/wp-content/backups-dup-pro/
+/wp-content/ai1wm-backups/
+*.daf
+
+# === Dossiers Duplicator extraits ===
+/dup-installer/
+/dup-archive*
+/dup-database*
+
+# === Local by Flywheel ===
+/wp-content/mu-plugins/local-domain-mapping.php
+
+# === OS ===
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# === Éditeurs ===
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# === Dépendances ===
+node_modules/
+vendor/
+
+# === Environnement ===
+.env
+.env.local
+.env.*.local
+
+# === Builds / sourcemaps ===
+*.map
+/dist/
+/build/
+
+# === Résidus à la racine ===
+.htaccess.bk
+.litespeed_flag
+*.bak
+index.html.bak
+
+# === Fichiers de debug Local by Flywheel ===
+local-phpinfo.php
+local-xdebuginfo.php
+
+# === Wordfence ===
+wordfence-waf.php
+.user.ini
+
+# === Duplicator résidus ===
+dup-installer-bootlog__*.txt
+ongsahifull_*_installer.php
+ongsahifull_*_installer-backup.php
+*.daf
+
+# === Fonts isolées à la racine (à déplacer dans le thème child) ===
+/MISTRAL.*

@@ -1,0 +1,71 @@
+/*
+Theme Name:   Modins Child
+Theme URI:    https://www.ongsahi.org
+Description:  Thème enfant du thème Modins pour le site de l'ONG SAHI Mpanasoa. Toutes les personnalisations visuelles et fonctionnelles du projet ongsahi.org vivent ici afin que le thème parent reste intact et puisse être mis à jour sans perte.
+Author:       ONGSAHI
+Author URI:   https://www.ongsahi.org
+Template:     modins
+Version:      0.1.0
+Requires at least: 6.0
+Requires PHP: 8.0
+License:      GPL-2.0-or-later
+License URI:  https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:  modins-child
+*/
+
+/* =========================================================
+   Design system SAHI — variables globales
+   Centralisées sur :root pour pouvoir être réutilisées
+   partout (CSS du child, custom CSS Elementor, widgets…).
+   ========================================================= */
+:root {
+    /* --- Couleurs de marque --------------------------------- */
+    /* TODO SAHI : valider la teinte officielle du bleu de marque
+       avec la charte graphique. Valeur provisoire en attendant. */
+    --sahi-blue: #0066CC;
+    --sahi-white: #ffffff;
+
+    /* Fond translucide utilisé pour les overlays / cards
+       posées sur image (hero, sections fond photo, etc.). */
+    --sahi-bg-transparent: rgba(255, 255, 255, 0.05);
+
+    /* --- Couleurs de texte ---------------------------------- */
+    /* TODO SAHI : à figer après validation charte. */
+    --sahi-text-primary: #1a1a1a;
+    --sahi-text-secondary: #4a4a4a;
+    --sahi-text-muted: #6b7280;
+    --sahi-text-on-blue: var(--sahi-white);
+
+    /* --- États / accents ------------------------------------ */
+    --sahi-link: var(--sahi-blue);
+    --sahi-link-hover: #0052a3;
+    --sahi-border: #e5e7eb;
+
+    /* --- Espacements section --------------------------------
+       Échelle utilisée pour les paddings verticaux des
+       sections Elementor : "section sm/md/lg/xl". */
+    --sahi-space-xs: 0.5rem;   /*  8px */
+    --sahi-space-sm: 1rem;     /* 16px */
+    --sahi-space-md: 2rem;     /* 32px */
+    --sahi-space-lg: 4rem;     /* 64px */
+    --sahi-space-xl: 6rem;     /* 96px */
+
+    --sahi-section-padding-y: var(--sahi-space-lg);
+    --sahi-container-max: 1200px;
+
+    /* --- Typographie ---------------------------------------- */
+    /* On laisse le thème parent gérer les font-family ; on
+       n'ajoute ici que les tailles de référence du design system. */
+    --sahi-font-size-base: 1rem;
+    --sahi-font-size-lead: 1.125rem;
+    --sahi-line-height-base: 1.6;
+
+    /* --- Radius / élévations -------------------------------- */
+    --sahi-radius-sm: 4px;
+    --sahi-radius-md: 8px;
+    --sahi-radius-lg: 16px;
+    --sahi-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.06);
+    --sahi-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Custom styles SAHI */

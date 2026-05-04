@@ -1,0 +1,49 @@
+# --- OS / éditeurs -----------------------------------------------
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# --- Logs / debug ------------------------------------------------
+*.log
+debug.log
+error_log
+
+# --- Dépendances build / outils ----------------------------------
+node_modules/
+vendor/
+.sass-cache/
+.cache/
+.parcel-cache/
+.pnpm-store/
+
+# --- Assets buildés (à régénérer, on versionne les sources) ------
+# Décommente si tu mets en place un build SCSS / JS bundlé :
+# assets/css/dist/
+# assets/js/dist/
+# *.min.css
+# *.min.js
+*.map
+
+# --- Lockfiles d'outils dev (au choix du projet) -----------------
+# package-lock.json
+# yarn.lock
+# composer.lock
+
+# --- Fichiers d'environnement ------------------------------------
+.env
+.env.local
+.env.*.local
+
+# --- Backups / temporaires ---------------------------------------
+*.bak
+*.tmp
+*.orig
+*.rej
